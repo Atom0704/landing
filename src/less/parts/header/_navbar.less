@@ -1,0 +1,58 @@
+nav
+{
+  ul
+  {
+    display: flex;
+
+    li
+    {
+      padding: 20px 0;
+
+      a
+      {
+        display: block;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: @color-4;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px)
+{
+  nav
+  {
+    //display: none;
+
+    padding: 2px 0 !important;
+    ul
+    {
+      overflow: hidden;
+      width: 0;
+      transition: .4s ease;
+      right: 0;
+      position: absolute;
+      z-index: 1;
+      flex-direction: column;
+      background-color: @color-4;
+
+      li
+      {
+        padding: 2px 0;
+        margin-left: 10px;
+        a
+        {
+          color: @color-5;
+        }
+      }
+
+      &.show
+      {
+        width: 200px;
+        margin-right: 0;
+      }
+    }
+  }
+}

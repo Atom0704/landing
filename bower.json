@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "description": "...",
+  "main": "index.js",
+  "authors": [
+    "Alexandr Tomilin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "animate.css": "^3.5.2"
+  }
+}

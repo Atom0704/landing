@@ -1,0 +1,82 @@
+body
+{
+  color: @color-4;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+section
+{
+  background-color: @color-1;
+}
+
+.placeholder-rules-focus()
+{
+  border-bottom: 1px solid @color-3 !important;
+}
+
+.placeholder-rules()
+{
+  text-transform: uppercase;
+  user-select: none;
+  transition: .3s ease-in-out;
+  height: 30px;
+  color: @color-4;
+  font-weight: bold;
+}
+
+.delimiter
+{
+  width: 75px;
+  height: 1px;
+  background-color: @color-5;
+  margin: 10px 0 20px;
+}
+
+input[type='text'], input[type='email']
+{
+  height: 40px;
+  margin: 50px 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid @color-5;
+
+  &::-webkit-input-placeholder
+  {
+    .placeholder-rules();
+  }
+  &:-moz-placeholder
+  {
+    .placeholder-rules();
+  }
+  &::-moz-placeholder
+  {
+    .placeholder-rules();
+  }
+  &:-ms-input-placeholder
+  {
+    .placeholder-rules();
+  }
+
+
+  &:focus::-webkit-input-placeholder
+  {
+    .placeholder-rules-focus();
+  }
+
+  &:focus::-moz-placeholder
+  {
+    .placeholder-rules-focus();
+  }
+
+  &:focus:-moz-placeholder
+  {
+    .placeholder-rules-focus();
+  }
+
+  &:focus:-ms-input-placeholder
+  {
+    .placeholder-rules-focus();
+  }
+
+}

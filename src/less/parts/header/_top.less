@@ -1,0 +1,80 @@
+.top
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid @color-5;
+  min-height: 46px;
+  align-items: center;
+  justify-content: space-around;
+
+  .icon
+  {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .credit-card, .clock, .contacts
+  {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon
+    {
+      margin-right: 10px;
+    }
+  }
+
+  .clock
+  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    span
+    {
+      padding: 0 5px;
+    }
+  }
+
+@media only screen and (max-width: 767px)
+{
+  .credit-card, .clock, .contacts
+  {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+  .credit-card
+  {
+    .icon
+    {
+      background-image: url("../../images/default/header/top/credit-card.svg");
+    }
+  }
+
+
+  .clock
+  {
+    .icon
+    {
+      background-image: url("../../images/default/header/top/clock.svg");
+    }
+  }
+
+
+  .contacts
+  {
+    .icon
+    {
+      background-image: url("../../images/default/header/top/call.svg");
+    }
+  }
+}
